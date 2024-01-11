@@ -56,7 +56,7 @@ a {
 /* Classe Padrão para todos os Botões */
 .btn {
     text-align: center;
-    padding: 12px 32px; /* Definindo espaçamento interno de 12px acima e abaixo e 32px nas laterais */
+    padding: 8px 32px; /* Definindo espaçamento interno de 12px acima e abaixo e 32px nas laterais */
     background: none;   /* Sem background */
     border: 1px solid var(--purple-500);    /* Borda com 1px, com a linha solida e cor roxa */
     color: var(--white);
@@ -170,7 +170,7 @@ h4 {
 }
 
 .home_container .btn {
-    width: 40%; /* o botão terá 40% da largura do container/elemento/tag que o envolve, no caso do home_container */
+    /*width: 40%;  o botão terá 40% da largura do container/elemento/tag que o envolve, no caso do home_container */
 }
 
 .home_content {
@@ -228,7 +228,8 @@ h4 {
     margin: 64px auto 32px;
     padding: 0 32px;
 
-    display: grid;              /* modo de organização de elementos em Grade - Colunas e Linhas - parecido com uma tabela*/
+    display: flex; 
+    flex-direction: column;             /* modo de organização de elementos em Grade - Colunas e Linhas - parecido com uma tabela*/
     justify-content: center;    /* alinhamento horizontal */
     align-items: center;        /* alinhamento vertical */
     grid-template-columns: repeat(auto-fill, 518px);    /* defininos as colunas do Grid/Grade com uma largura mínima de 518 pixels, preenchendo automaticamente o espaço disponível. */ 
@@ -252,8 +253,8 @@ h4 {
 }
 
 .contato_content p {
-    display: block;
     text-align: justify;
+    padding: 2rem;
 }
 
 /* REDES SOCIAIS */
@@ -280,11 +281,12 @@ h4 {
 form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 480px;
-
     margin: 112px 0 0 0;
     padding: 24px;
     border: none;
+    padding-bottom: 2rem; 
 }
 
 form label {
@@ -315,3 +317,21 @@ footer {
     filter: opacity(0.9);
     font-weight: bold;
 }
+
+@media(max-width: 768px){
+    html {
+      font-size: 87.5%;
+    }
+    .home_container{
+        flex-direction: column;
+    }
+
+    .sobre_container{
+        flex-direction: column;
+    }
+    .form{
+        width: 309px;
+        padding-bottom: 2rem 
+        }
+}
+
