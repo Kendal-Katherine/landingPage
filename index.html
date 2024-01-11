@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <header id="menu" class="menu_container flex">  <!-- Adicione aqui as CLASSES -->
+        <div class="menu_content">                  <!-- Adicione aqui as CLASSES -->
+            <a href="#">Landing Page</a>
+
+            <nav>
+                <ul class="menu_lista flex">    <!-- Adicione aqui as CLASSES -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contate Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="home_container">  <!-- Adicione aqui as CLASSES -->
+            <article id="home-texto" class="home_content">  <!-- Adicione aqui as CLASSES -->
+                <h4>Bem Vindo ao cão amigo</h4>
+                <h1>A amizade canina é para toda a vida</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni
+                    quisquam</p>
+
+                <a class="btn" target="_blank" href="https://github.com/Kendal-Katherine">    <!-- Adicione aqui as CLASSES -->
+                    Explore
+                </a>
+            </article>
+
+            <article id="home-imagem" class="home_content"> <!-- Adicione aqui as CLASSES -->
+                <img class="home_content_img" src="assets/img/dog-high-five-animate.svg" alt="Cachorrinho e sua dona se cumprimentando">   <!-- Adicione aqui as CLASSES -->
+            </article>
+        </section>
+
+        <section id="sobre" class="sobre_container">    <!-- Adicione aqui as CLASSES -->
+            <img src="https://avatars.githubusercontent.com/u/127570944?v=4"
+                alt="Foto do Perfil do Github - Kendal Katherine">
+
+            <article id="sobre-texto">  <!-- Adicione aqui as CLASSES -->
+                <h1>Quem sou eu?</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odit voluptates incidunt
+                    inventore rem error harum blanditiis accusamus vitae, minus fugit consequatur? Dolorum maiores magni
+                    deleniti modi sit laudantium totam!
+                </p>
+
+                <div id="sobre-github"  class="sobre_github flex">   <!-- Adicione aqui as CLASSES -->
+                    <a class="btn" target="_blank" href="https://github.com/kendal-katherine">Github</a>
+                    <p>13 Seguidores</p>
+                    <p>23 Repositórios</p>
+                </div>
+
+            </article>
+        </section>
+
+        <section id="contato" class="contato_container">    <!-- Adicione aqui as CLASSES -->
+            <article id="contato-texto" class="contato_content">    <!-- Adicione aqui as CLASSES -->
+                <h4>Me Contate</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi similique esse fuga necessitatibus,
+                    iusto alias eius perferendis qui iste minima blanditiis repellendus distinctio dolor obcaecati
+                    aliquid quod quidem incidunt quibusdam!</p>
+
+                <div id="redes-sociais" class="social_container flex"  >  <!-- Adicione aqui as CLASSES -->
+                    <a href="https://www.linkedin.com/in/kendal-katherine-correia/" target="_blank">
+                        <img class="social_icon" src="https://img.icons8.com/ios/500/linkedin.png"
+                            alt="Logo do LinkedIn" target="_blank" />   <!-- Adicione aqui as CLASSES -->
+                    </a>
+                    <a href="https://github.com/Kendal-Katherine" target="_blank">
+                        <img class="social_icon" src="https://img.icons8.com/ios/500/github--v1.png"
+                            alt="Logo do Github"  /> <!-- Adicione aqui as CLASSES -->
+                    </a>
+                    <a href="https://www.instagram.com/kendal.katherine/" target="_blank">
+                        <img class="social_icon" src="https://img.icons8.com/ios/500/instagram-new--v1.png"
+                            alt="Logo do Instagram"  />  <!-- Adicione aqui as CLASSES -->
+                    </a>
+                </div>
+            </article>
+
+            <form action="" method="POST">
+                <label for="nome">Nome: </label>
+                <input id="nome" type="text" name="name" placeholder="Digite seu nome" required>
+
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="subject">Assunto: </label>
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required>
+
+                <label for="message">Mensagem: </label>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+
+                <button class="btn" type="submit">Enviar</button> <!-- Adicione aqui as CLASSES -->
+            </form>
+        </section>
+    </main>
+
+    <footer class="flex"> <!-- Adicione aqui as CLASSES -->
+        Feito por Kendal Katherine - 2024
+    </footer>
+
+</body>
+
+</html>
