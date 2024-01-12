@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header id="menu" class="menu_container flex"> <!-- Adicione aqui as CLASSES -->
+        <div class="menu_content"> <!-- Adicione aqui as CLASSES -->
+            <a href="#">Landing Page</a>
+
+            <nav>
+                <ul class="menu_lista flex"> <!-- Adicione aqui as CLASSES -->
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/contato.html">Contate Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="home_container">
+        <article id="home-texto" class="home_content">
+            <h1>Entre em contato comigo</h1>
+
+            <form action="" method="POST">
+                <label for="nome">Nome: </label>
+                <input id="nome" type="text" name="name" placeholder="Digite seu nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email" placeholder="Digite seu email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+
+                <label for="subject">Assunto: </label>
+                <input id="assunto" type="text" name="subject" placeholder="Digite o título da mensagem"
+                    onkeyup="validaAssunto()">
+                <div id="txtAssunto"></div>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"
+                    onkeyup="validaMensagem()"></textarea>
+                <div id="txtMensagem"></div>
+
+                <button class="btn" onclick="enviar()">Enviar</button> <!-- Adicione aqui as CLASSES -->
+            </form>
+        </article>
+        <article id="home-texto" class="home_content">
+            <h2>Endereço: </h2>
+
+            <p>Avenida João Maria de Almeida - Vila Campestre - São Paulo/SP</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.426640586448!2d-46.64902902541793!3d-23.660696065247638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5acecab5a69f%3A0x2f89811dd1320c26!2sAv.%20Jo%C3%A3o%20Maria%20de%20Almeida%20-%20Vila%20Campestre%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004330-170!5e0!3m2!1spt-BR!2sbr!4v1705098253012!5m2!1spt-BR!2sbr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
+
+
+            <script src="/assets/js/script.js"></script>
+        </article>
+    </section>
+</body>
+
+</html>

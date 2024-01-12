@@ -154,7 +154,7 @@ h4 {
     font-size: 16px;
 }
 
-.home_container h4 {
+.home_container h2 {
     font-weight: bold;
     margin: 16px 0;
 }
@@ -214,8 +214,8 @@ h4 {
 }
 
 .sobre_container p {
-    text-align: center;
-    margin: 16px 0;
+    text-align: justify;
+    margin: 16px 30px;
 }
 
 .sobre_github {
@@ -283,7 +283,6 @@ form {
     flex-direction: column;
     justify-content: center;
     width: 480px;
-    margin: 112px 0 0 0;
     padding: 24px;
     border: none;
     padding-bottom: 2rem; 
